@@ -12,11 +12,11 @@ public class Answer
     private static double Length(int[] pointA, int[] pointB)
     {
       // Введите свое решение ниже
-      int catet_A = Vector_B[0] - Vector_A[0];
-    int catet_B = Vector_B[1] - Vector_A[1];
-    double gepotenuza_C = Math.Sqrt((catet_A * catet_A) + (catet_B * catet_B));
-    return gepotenuza_C;
-
+    double X = pointB[0] - pointA[0];
+    double Y = pointB[1] - pointA[1];
+    double Z = pointB[2] - pointA[2];
+    double LenghtLine3D = Math.Sqrt(Math.Pow(X, 2) + Math.Pow(Y, 2) + Math.Pow(Z, 2));
+    return LenghtLine3D;
 
     }
 
@@ -33,12 +33,12 @@ public class Answer
             y3 = int.Parse(args[5]);
         } else {
            // Здесь вы можете поменять значения для отправки кода на Выполнение
-            x1 = 3;
-            x2 = 6;
-            x3 = 8;
-            y1 = 2;
-            y2 = 1;
-            y3 = -7;
+            x1 = 7;
+            x2 = -5;
+            x3 = 0;
+            y1 = 1;
+            y2 = -1;
+            y3 = 9;
         }
 
         // Не удаляйте строки ниже
